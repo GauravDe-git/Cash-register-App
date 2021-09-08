@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Register App</title>
+</head>
+<body>
+<div style="text-align: center;">
+    <h1> Cash Register App</h1>
+    <p> This cash register app will take bill amount from the user
+      and return the required change. It will also show how many notes of rs 2000, 500, 100, 50 ,10 ,5 and 1 are to be returned.  
+    </p>
+</div>
+    <label for = "bill-amount"> Bill Amount:</label>
+    <input id="bill-amount" type="text"/> <br>
+    <br>
+    <label for = "cash-given">Cash Given:</label>
+    <input id="cash-given" type="text"/> <br>
+    <button id="check-btn">Check</button>
+    <p id="error-msg"></p>
+    <table style="padding: 1rem; width: 50%;
+    text-align: left;
+    border-collapse: collapse;
+    margin: auto;
+    border: 1px solid black;">
+        <caption>Return Change</caption>
+        <tr style="border: 1px solid black;">
+            <th>No. of Notes</th>
+            <td class = "no-of-notes"></td>
+            <td class = "no-of-notes"></td>
+            <td class = "no-of-notes"></td>
+            <td class = "no-of-notes"></td>
+            <td class = "no-of-notes"></td>
+            <td class = "no-of-notes"></td>
+            <td class = "no-of-notes"></td>
+        </tr> 
+        <tr>
+            <th>Note </th>
+            <td>2000</td>
+            <td>500</td>
+            <td>100</td>
+            <td>20</td>
+            <td>10</td>
+            <td>5</td>
+            <td>1</td>
+        </tr>
+    </table>
+    
+<script src="./index.js"></script>    
+</body>
+</html>
