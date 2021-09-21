@@ -10,15 +10,20 @@ const availableNotes = [2000,500,100,20,10,5,1];
 checkBtn.addEventListener("click",function validateBillAndCashgiven()
 {
     errorMessage.style.display = "none";
-    if(Number(billAmount.value) > 0)
+    if(Number(cashGiven.value) <0 || Number(billAmount.value) <0)
     {
-        if (Number(cashGiven.value) >= Number(billAmount.value))
+        errorMessage.style.display = "block";
+        errorMessage.innerText = "Invalid Number";
+    }
+    else if(cashGiven.value = billAmount.value)
+    {
+        errorMessage.style.display = "block";
+        errorMessage.innerText = "I think this app wasn't needed ♫" 
+    }
+    else if(Number(billAmount.value) > 0)
+    {
+         if (Number(cashGiven.value) > Number(billAmount.value))
         {
-            // if(cashGiven.value = billAmount.value)
-            // {
-            //     errorMessage.style.display = "block";
-            //     errorMessage.innerText = "I think this app wasn't needed ♫" 
-            // }
             errorMessage.style.display = "block";
             errorMessage.innerText = "Here is your change!";
             const amountTobeReturned = cashGiven.value - billAmount.value;
