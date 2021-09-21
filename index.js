@@ -15,11 +15,6 @@ checkBtn.addEventListener("click",function validateBillAndCashgiven()
         errorMessage.style.display = "block";
         errorMessage.innerText = "Invalid Number";
     }
-    else if(cashGiven.value = billAmount.value)
-    {
-        errorMessage.style.display = "block";
-        errorMessage.innerText = "I think this app wasn't needed ♫" 
-    }
     else if(Number(billAmount.value) > 0)
     {
          if (Number(cashGiven.value) > Number(billAmount.value))
@@ -34,6 +29,11 @@ checkBtn.addEventListener("click",function validateBillAndCashgiven()
             errorMessage.style.display = "block";
             errorMessage.innerText = "You still have to pay the rest";
         }
+    }
+    else if(cashGiven.value = billAmount.value)
+    {
+        errorMessage.style.display = "block";
+        errorMessage.innerText = "I think this app wasn't needed ♫" 
     }
     else
     {
