@@ -1,4 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 body{
+    font-family: 'Open Sans', sans-serif;
     background-color: rgb(172, 204, 224);
 }
+
+.label-input {
+    display: block;
+    font-size: large;
+    font-weight: 600;
+}
+
+#bill-amount {
+    font-size: 14px;
+    outline: rgb(73, 50, 205);
+    padding: 0.6rem 1rem;
+    margin: 1rem;
+    border: 2px solid rgb(50, 73, 205);
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 258px;
+}
+
+#cash-given {
+    font-size: 14px;
+    outline: rgb(73, 50, 205);
+    padding: 0.6rem 1rem;
+    margin: 1rem;
+    border: 2px solid rgb(50, 73, 205);
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 258px;
+}
+
+#check-btn{
+    background: rgb(223, 149, 159);
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    font-size: large;
+    cursor: pointer;
+    margin: auto;
+  }
+
+  #error-msg {
+    display: block;
+    font-size: larger;
+    margin: 1rem 0 0;
+  }
+
+  .footer{
+    background-color: rgb(194, 223, 181);
+    overflow: auto;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-bottom-left-radius: 1rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 110px;
+    width: 100%;
+}
+
+.footer-header{
+    font-weight: bold;
+    font-size: large;
+}
+
+.footer .ul{
+    padding-inline-start: 0px;
+}
+
+.list-non-bullet{
+    list-style: none;
+}
+
+.list-item-inline{
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+  
+
+
 
