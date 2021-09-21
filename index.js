@@ -24,15 +24,17 @@ checkBtn.addEventListener("click",function validateBillAndCashgiven()
             const amountTobeReturned = cashGiven.value - billAmount.value;
             calculateChange(amountTobeReturned); 
         }
+        
+        else if(Number(cashGiven.value) < Number(billAmount.value))
+        {
+            errorMessage.style.display = "block";
+            errorMessage.innerText = "You still have to pay the rest";
+        }
+
         else if((cashGiven.value) = (billAmount.value))
         {
             errorMessage.style.display = "block";
             errorMessage.innerText = "I think this app wasn't needed ♫" 
-        }
-        else
-        {
-            errorMessage.style.display = "block";
-            errorMessage.innerText = "You still have to pay the rest";
         }
     }
     else
